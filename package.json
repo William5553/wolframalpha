@@ -1,6 +1,6 @@
 {
   "name": "node-wolfram",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Extremely minimal WolframAlpha API wrapper for Node.js.",
   "main": "lib/index.js",
   "scripts": {
@@ -19,11 +19,11 @@
   "license": "EPL",
   "dependencies": {
     "xml2js": "~0.4.0",
-    "request": "~2.29.0",
-    "grunt-mocha-test": "~0.8.1"
+    "request": "~2.29.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-coffee": "~0.7.0"
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-mocha-test": "~0.8.1"
   }
 }
