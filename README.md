@@ -71,6 +71,11 @@ age 18:  0.83 seconds
 
 If the request or xml2js conversion has an error, the callback will receive that error. If the query is received, but the queryresult has an error property, then the error given to the callback will be that queryresult's error.
 
+Testing
+-------
+Install grunt with: `npm install -g grunt grunt-cli`
+`APPID=YOUR_APPID_HERE grunt test`
+
 Example Response
 -----
 This is what you get for the response if you query `2+2`. It should help show how the XML response gets converted to JSON. Attributes of tags are stored in the `$` properties.
