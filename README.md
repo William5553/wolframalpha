@@ -75,7 +75,7 @@ If the request or xml2js conversion has an error, the callback will receive that
 
 Testing
 -------
-Install grunt with: `npm install -g grunt grunt-cli`
+Install grunt with: `npm install -g grunt grunt-cli`<br/>
 `APPID=YOUR_APPID_HERE grunt test`
 
 Example Response
