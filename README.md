@@ -2,6 +2,8 @@ node-wolfram
 ============
 node-wolfram is a very thin wrapper for the [WolframAlpha API](http://products.wolframalpha.com/api/). It merely makes queries and returns the answer in JSON (converted from their usual XML). The conversion is done with [node-xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) and nothing else is done.
 
+(Kind of a rewrite of [node-wolfram by strax](https://github.com/strax/node-wolfram). He used libxml for parsing and I didn't like that.)
+
 Install
 -------
 `npm install node-wolfram`
