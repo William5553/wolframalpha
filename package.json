@@ -1,0 +1,29 @@
+{
+  "name": "node-wolfram",
+  "version": "0.0.0",
+  "description": "Extremely minimal WolframAlpha API wrapper for Node.js.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "grunt build"
+  },
+  "keywords": [
+    "wolfram",
+    "alpha",
+    "wolframalpha",
+    "api",
+    "wrapper",
+    "json"
+  ],
+  "author": "Rahat Ahmed <rahatarmanahmed@gmail.com>",
+  "license": "EPL",
+  "dependencies": {
+    "xml2js": "~0.4.0",
+    "request": "~2.29.0",
+    "grunt-mocha-test": "~0.8.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-coffee": "~0.7.0"
+  }
+}
