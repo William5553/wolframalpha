@@ -19,11 +19,11 @@
   "license": "EPL",
   "dependencies": {
     "xml2js": "~0.4.0",
-    "request": "~2.29.0"
+    "request": "~2.81.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-mocha-test": "~0.8.1"
+    "grunt": "~1.0.1",
+    "grunt-contrib-coffee": "~1.0.0",
+    "grunt-mocha-test": "~0.13.2"
   }
 }
