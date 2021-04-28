@@ -12,23 +12,23 @@ Usage
 -----
 Here is an example in JavaScript:
 ```javascript
-var Client = require('@william5553/wolframalpha');
-var Wolfram = new Client('YOUR_APPID_HERE');
-Wolfram.query("2+2", function(err, result) {
-	if(err)
-		console.log(err);
+const Client = require('@william5553/wolframalpha');
+const Wolfram = new Client('YOUR_APPID_HERE');
+Wolfram.query('2+2', function(err, result) {
+	if (err)
+		console.log(JSON.stringify(err));
 	else
 	{
-		for(var a=0; a<result.queryresult.pod.length; a++)
+		for(let a = 0; a < result.queryresult.pod.length; a++)
 		{
-			var pod = result.queryresult.pod[a];
+			const pod = result.queryresult.pod[a];
 			console.log(pod.$.title,": ");
-			for(var b=0; b<pod.subpod.length; b++)
+			for(let b = 0; b < pod.subpod.length; b++)
 			{
-				var subpod = pod.subpod[b];
-				for(var c=0; c<subpod.plaintext.length; c++)
+				const subpod = pod.subpod[b];
+				for(let c = 0; c < subpod.plaintext.length; c++)
 				{
-					var text = subpod.plaintext[c];
+					const text = subpod.plaintext[c];
 					console.log('\t', text);
 				}
 			}

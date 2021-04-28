@@ -1,8 +1,9 @@
 {
   "name": "@william5553/wolframalpha",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extremely minimal WolframAlpha API wrapper for Node.js.",
-  "main": "src/index.js",
+  "main": "index.js",
+  "repository": "github:William5553/wolframalpha",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +19,14 @@
     "json"
   ],
   "author": "William Kang <contact@williamk.ga>",
+  "bugs": {
+    "url": "https://github.com/William5553/wolframalpha/issues"
+  },
+  "homepage": "https://github.com/William5553/wolframalpha",
   "license": "MIT",
   "dependencies": {
     "node-superfetch": "^0.2.2",
-    "xml2js": "~0.4.23"
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
