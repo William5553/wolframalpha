@@ -1,6 +1,6 @@
 {
   "name": "@william5553/wolframalpha",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extremely minimal WolframAlpha API wrapper for Node.js.",
   "main": "src/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "node-superfetch": "^0.2.2",
-    "xml2js": "~0.4.0"
+    "xml2js": "~0.4.23"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
