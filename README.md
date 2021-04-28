@@ -1,18 +1,18 @@
-node-wolfram
+@william5553/wolframalpha
 ============
-node-wolfram is a very thin wrapper for the [WolframAlpha API](http://products.wolframalpha.com/api/). It merely makes queries and returns the answer in JSON (converted from their usual XML). The conversion is done with [node-xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) and nothing else is done.
+wolframalpha is a very thin wrapper for the [WolframAlpha API](http://products.wolframalpha.com/api/). It merely makes queries and returns the answer in JSON (converted from their usual XML). The conversion is done with [node-xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) and nothing else is done.
 
-(Kind of a rewrite of [node-wolfram by strax](https://github.com/strax/node-wolfram). He used libxml for parsing and I didn't like that.)
+Updated version of [node-wolfram by rahatarmanahmed](https://github.com/rahatarmanahmed/node-wolfram) which was a rewrite of [node-wolfram by strax](https://github.com/strax/node-wolfram).
 
 Install
 -------
-`npm install node-wolfram`
+`npm install @william5553/wolframalpha`
 
 Usage
 -----
 Here is an example in JavaScript:
 ```javascript
-var Client = require('node-wolfram');
+var Client = require('@william5553/wolframalpha');
 var Wolfram = new Client('YOUR_APPID_HERE');
 Wolfram.query("2+2", function(err, result) {
 	if(err)
@@ -37,22 +37,7 @@ Wolfram.query("2+2", function(err, result) {
 });
 ```
 
-Here is the equivalent in CoffeeScript:
-```coffeescript
-Client = require 'node-wolfram'
-Wolfram = new Client('YOUR_APPID_HERE')
-Wolfram.query "2+2", (err, result) ->
-	if err?
-		console.log err
-	else
-		for pod in result.queryresult.pod
-			console.log pod.$.title + ": "
-			for subpod in pod.subpod
-				for text in subpod.plaintext
-					console.log '\t', text
-```
-
-Both will output:
+It will output:
 ```
 Input: 
 	 2+2
@@ -72,11 +57,6 @@ age 18:  0.83 seconds
 ```
 
 If the request or xml2js conversion has an error, the callback will receive that error. If the query is received, but the queryresult has an error property, then the error given to the callback will be that queryresult's error.
-
-Testing
--------
-Install grunt with: `npm install -g grunt grunt-cli`<br/>
-`APPID=YOUR_APPID_HERE grunt test`
 
 Example Response
 -----
