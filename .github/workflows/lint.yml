@@ -8,10 +8,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
 
-      - name: Install Node v10
+      - name: Install Node v12
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 10
+          node-version: 12
 
       - name: Install pnpm and install dependencies
         uses: pnpm/action-setup@v2.0.1
