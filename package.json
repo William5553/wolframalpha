@@ -1,11 +1,12 @@
 {
   "name": "@william5553/wolframalpha",
-  "version": "1.0.3",
-  "description": "Extremely minimal WolframAlpha API wrapper for Node.js.",
+  "version": "1.0.4",
+  "description": "Minimal WolframAlpha API wrapper for Node.js",
   "main": "index.js",
   "repository": "github:William5553/wolframalpha",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.jsx,.ts,.tsx"
   },
   "engines": {
     "node": ">=10"
