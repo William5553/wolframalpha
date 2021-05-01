@@ -1,6 +1,6 @@
 {
   "name": "@william5553/wolframalpha",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Minimal WolframAlpha API wrapper for Node.js",
   "main": "index.js",
   "repository": "github:William5553/wolframalpha",
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/William5553/wolframalpha",
   "license": "MIT",
   "dependencies": {
-    "node-superfetch": "^0.2.2",
+    "node-superfetch": "^0.2.3",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
